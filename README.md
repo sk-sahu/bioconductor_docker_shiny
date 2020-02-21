@@ -22,8 +22,8 @@ git clone https://github.com/sk-sahu/bioconductor_docker_shiny.git
 
 ```
 docker run --rm -e PASSWORD=bioc -p 3838:3838 \
-	-v bioconductor_docker_shiny/test/:/srv/shiny-server/ 
-	-v /srv/shinylog/:/var/log/shiny-server/ 
+	-v bioconductor_docker_shiny/test/:/srv/shiny-server/ \
+	-v /srv/shinylog/:/var/log/shiny-server/ \
 	sudosk/bioconductor_docker_shiny
 ```
 
