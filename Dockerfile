@@ -1,5 +1,13 @@
 FROM bioconductor/bioconductor_docker:devel
 
+LABEL name="bioconductor/bioconductor_docker_shiny" \
+      version="3.11.1" \
+      url="https://github.com/Bioconductor/bioconductor_docker" \
+      vendor="Bioconductor Project" \
+      maintainer="sangramsahu15@gmail.com" \
+      description="Bioconductor docker image with Shiny Server." \
+      license="Artistic-2.0"
+
 RUN apt-get update && apt-get install -y \
     sudo \
     gdebi-core \
